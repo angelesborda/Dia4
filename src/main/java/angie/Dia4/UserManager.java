@@ -73,7 +73,7 @@ public class UserManager {
 		Scanner opcion=new Scanner(System.in);
 		String nombre =String.valueOf(opcion.nextLine());
 		User log=au.findUser(nombre);
-		System.out.println ("antes del if" + log);
+		
 		if(log==null){
 			log=au.createUser(log);
 		}
